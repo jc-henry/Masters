@@ -4,7 +4,7 @@
 #SBATCH --job-name      fastqc_trimmed           					                # job-name
 #SBATCH --time          00:45:00                    							# hh:mm:ss time allocated 
 #SBATCH --mem           2100MB                         							# memory allocated
-#SBATCH --cpus-per-task 6                           						        # 1 thread per file
+#SBATCH --cpus-per-task 6                           						        # 1 thread per file.
 #SBATCH --output        ./fastqc_trimmed.%j.output
 #SBATCH --error         ./fastqc_trimmed.%j.err
 #SBATCH --mail-type     END
