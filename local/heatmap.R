@@ -1,9 +1,9 @@
-library('tidyverse')
-library('gplots')
-library('matrixTests')
+library(tidyverse)
+library(gplots)
+library(matrixTests)
 
 # set directory paths
-dir_tpm <- "C:/ub/ranunculus_lab_LL/nesi_outputs/allranunculus_rsem_mapping_taxon"                    # the sample gene-level TPM files
+dir_tpm <- "path/to/allranunculus_rsem_mapping_taxon"                    # the sample gene-level TPM files
 
 # make objects of the TPM files
 porters_monroi_1 <- paste(dir_tpm, "porters_monroi_1_rsem.txt", sep="/")

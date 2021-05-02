@@ -1,8 +1,8 @@
 ### blast search with max_target_seqs set to 5 then filter by lowest E-value
 
-library('readxl')
-library('tidyverse')
-library('strex')
+library(readxl)
+library(tidyverse)
+library(strex)
 
 bla <- read.csv('blastp_output.outfmt6', header = FALSE, sep = '\t')
 
