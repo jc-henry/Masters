@@ -388,14 +388,14 @@ $ time for i in ./*fa; do secondlin=$(sed -n &#39;2 p&#39; ${i}); num=$(grep ${s
 $ or i in ../nogaps/*fa; do name=$(basename $i); sed &#39;s/_.*//&#39; ${i} &gt; ./${name}; done 
 
 $ # for the individual assemblises, cut at second underscore to retain number ID
-$ for i in ../nogaps_70/*fa; do name=$(basename $i); sed &#39;s/_[^_]*//2g&#39; ${i} &gt; ./${name}; done</code></pre>
+$ for i in ../nogaps/*fa; do name=$(basename $i); sed &#39;s/_[^_]*//2g&#39; ${i} &gt; ./${name}; done</code></pre>
 <p>Produce ML phylogenetic trees</p>
 <pre class="console"><code>$ # make ML trees using the HKY model with random start tree
-$ for i in ../trimmed_header_70/*.fa; do filename=$(basename ${i} .fa); \
+$ for i in ../trimmed/*.fa; do filename=$(basename ${i} .fa); \
 raxml-ng --search1 --msa ${i} --model HKY --prefix ${filename} --threads 1 --seed 2; done
 
 $ # bootstrap the MSAs
-$ for i in ../trimmed_header_70/*.fa; do filename=$(basename ${i} .fa); \
+$ for i in ../trimmed/*.fa; do filename=$(basename ${i} .fa); \
 raxml-ng --bootstrap --msa ${i} --model HKY --prefix ${filename} --threads 1 --seed 2 --bs-trees 100; done
   
 $ # calculate support for the ML trees
