@@ -20,49 +20,65 @@ sed 's/^>\(.*\)/\1/' | \
 grep assembly_ID >> ./ortholist_Assembly_ID.txt; done
 ```
 
-
-
+Run the Percent.pl script then remove any SCO clusters with fewer than 'n' sequences remaining
+From within a "percent_70" directory
 ```{console}
-$ 
-$ 
+$ # Percent.pl
+$ perl /path/to/Percent.pl \
+path/to/Single_Copy_Orthologue_Sequences/ ./ 70 
 
-$ 
+$ # Remove fastas without n taxa remaining 
+$ # adjust 'n' to 4 for aggregated assemblies and 12 for individual assemblies
+$ for i in ./*fa; do num=$(grep ">" ${i} | wc -l); if [ ${num} -lt 'n' ]; then rm ${i}; fi; done
 ```
 
-
-
+Carry out multiple sequence alignments
+Run from within a "msa" directory
 ```{console}
-$ 
-$ 
-
-$ 
+$ for i in ../percent_70/*fa; do name=$(basename $i); muscle -quiet -in ${i} -out ./${name}; done
 ```
 
-
-
+Remove gaps from the MSAs and then remove any SCO shorter than 200 nucleotides or with no nucleotide variation
+Run from within a "nogaps" directory
 ```{console}
-$ 
-$ 
+$ # run trimAL
+$  for i in ../msa/*.fa; do name=$(basename $i); trimal -in ${i} -out ${name} -nogaps; done
 
-$ 
+$ # linearise the sequences (which are multi-line fasta after trimAL) for getting length
+$ for i in ./*fa; do name=$(basename ${i} .fa); bioawk -c fastx '{print ">"$name"\n"$seq}' ${i} > ${name}; rm ${i}; mv ${name} ${name}.fa; done
+  
+$ # remove any SCO file in which the sequences are less than 200 nucleotides long 
+$ # arbitrarily choose an assembly ID to check (all same length)
+$ for i in ./*fa; do num=$(awk '/taxon/{getline; print}' ${i} | wc -m); if [ ${num} -lt 200 ]; then rm ${i}; fi; done
+
+$ # remove any clusters with no nucleotide variation 
+$ # adjust 'n' to 4 for aggregated assemblies and 12 for individual assemblies
+$ time for i in ./*fa; do secondlin=$(sed -n '2 p' ${i}); num=$(grep ${secondlin} ${i} | wc -l); if [ ${num} -eq 'n' ]; then rm ${i}; fi; done
 ```
 
-
-
+Trim fasta headers to assembly names only
+Run within a "trimmed" directory
 ```{console}
-$ 
-$ 
+$ # for the aggregated assemblises, cut at first underscore
+$ or i in ../nogaps/*fa; do name=$(basename $i); sed 's/_.*//' ${i} > ./${name}; done 
 
-$ 
+$ # for the individual assemblises, cut at second underscore to retain number ID
+$ for i in ../nogaps_70/*fa; do name=$(basename $i); sed 's/_[^_]*//2g' ${i} > ./${name}; done
 ```
 
-
-
+Produce ML phylogenetic trees
 ```{console}
-$ 
-$ 
+$ # make ML trees using the HKY model with random start tree
+$ for i in ../trimmed_header_70/*.fa; do filename=$(basename ${i} .fa); \
+raxml-ng --search1 --msa ${i} --model HKY --prefix ${filename} --threads 1 --seed 2; done
 
-$ 
+$ # bootstrap the MSAs
+$ for i in ../trimmed_header_70/*.fa; do filename=$(basename ${i} .fa); \
+raxml-ng --bootstrap --msa ${i} --model HKY --prefix ${filename} --threads 1 --seed 2 --bs-trees 100; done
+  
+$ # calculate support for the ML trees
+$  for i in ../mltrees/*.raxml.bestTree; do treename=$(basename ${i} .raxml.bestTree); \
+raxml-ng --support --tree ${i} --bs-trees ../bstrees/${treename}.raxml.bootstraps --prefix ${treename} --threads 1; done
 ```
 
 
