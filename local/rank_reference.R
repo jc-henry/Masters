@@ -1,5 +1,4 @@
 library('tidyverse')
-library('gplots')
 library('strex')
 library('tools')
 

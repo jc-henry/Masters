@@ -1,5 +1,5 @@
 ---
-title: "Bash commands run on NeSI"
+title: "Bash commands run locally"
 output: html_document
 ---
 
@@ -7,21 +7,17 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-Filter initial assembly by best supported contig list and output representative contig FASTA file
+Concatenate TransDecoder .cds files and run 
 ```{console}
-$ module load seqtk/1.3-gimkl-2018b
-
-$ seqtk subseq Trinity_taxon_x.fasta taxon_x_bestsupported_contigs_list.txt > ./taxon_x_trinity_rep_contigs.fasta
+$ cat all_transdecoder.cds > all_taxa_nuc
 ```
 
-Append assembly identifier to TransDecoder peptide (.pep) and nucleotide (.cds files)
+Parse each OrthoFinder SCO cluster and output a list of TransDecoder IDs with cluster (file) name appended (separated by ".")
 ```{console}
-$ module load bioawk/1.0
-
-$ # .pep
-$ time bioawk -c fastx '{ print ">assembly_ID_" $name "\n" $seq }' assembly_ID_trinity_rep_contigs.fasta.transdecoder.pep > assembly_ID_id.faa
-$ # .cds
-$ time bioawk -c fastx '{ print ">assembly_ID_" $name "\n" $seq }' longest_isoform_trinity_assembly_ID.fasta.transdecoder.cds > assembly_ID_id.fna
+$ for file in *.fa; \
+do awk '/>/{sub(">","&"FILENAME"_");sub(/\.fasta/,x)}1' ${file} | \
+sed 's/^>\(.*\)/\1/' | \
+grep assembly_ID >> ./ortholist_Assembly_ID.txt; done
 ```
 
 
