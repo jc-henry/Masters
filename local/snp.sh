@@ -29,4 +29,4 @@ vcftools --vcf taxon_x_vcfutils_filtered.vcf --maf 0.25 --max-alleles 2 --min-al
 gunzip taxon_x_vcfutils_vcftools_filtered.vcf.gz
 
 # report the statistics
-rtg vcfstats taxon_x_vcfutils_vcftools_filtered.vcf > stats_taxon_x_vcfutils_vcftools_filtered.vcf
+rtg vcfstats taxon_x_vcfutils_vcftools_filtered.vcf > stats_taxon_x_vcfutils_vcftools_filtered.txt
