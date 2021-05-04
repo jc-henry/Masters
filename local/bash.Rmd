@@ -81,13 +81,12 @@ $  for i in ../mltrees/*.raxml.bestTree; do treename=$(basename ${i} .raxml.best
 raxml-ng --support --tree ${i} --bs-trees ../bstrees/${treename}.raxml.bootstraps --prefix ${treename} --threads 1; done
 ```
 
-
+Find overlapping genes in both the SCO expression analyses and the SCO phylogenetic tree analyses
 
 ```{console}
-$ 
-$ 
+$ # use grep to search content of one file in another
+$ grep -Ff taxonA-taxonB_group_expression.txt taxonA-taxonB_group_tree.txt
 
-$ 
 ```
 
 
