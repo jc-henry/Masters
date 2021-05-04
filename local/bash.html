@@ -401,14 +401,19 @@ raxml-ng --bootstrap --msa ${i} --model HKY --prefix ${filename} --threads 1 --s
 $ # calculate support for the ML trees
 $  for i in ../mltrees/*.raxml.bestTree; do treename=$(basename ${i} .raxml.bestTree); \
 raxml-ng --support --tree ${i} --bs-trees ../bstrees/${treename}.raxml.bootstraps --prefix ${treename} --threads 1; done</code></pre>
-<pre class="console"><code>$ 
-$ 
+<p>Find overlapping genes in both the SCO expression analyses and the SCO phylogenetic tree analyses</p>
+<pre class="console"><code>$ # use grep to search content of one file in another
+$ grep -Ff taxonA-taxonB_group_expression.txt taxonA-taxonB_group_tree.txt
+</code></pre>
+<p>For each individual rep contig assembly get a list of filtered SCOs for SNP calling Need to alter sample name each (12) time</p>
+<pre class="console"><code>$ # get the list of TransDecoder IDs
+$ for i in /path/to/nogaps/*.fa; do grep taxon_n ${i} &gt;&gt; ./headers_taxon_n.txt; done
 
-$ </code></pre>
-<pre class="console"><code>$ 
-$ 
+$ # # remove the &quot;.p&quot; extension
+$ sed &#39;s/\..*//&#39; headers_taxon_n.txt &gt; endtrim_taxon_n.txt
 
-$ </code></pre>
+$ # remove taxon and sample ID (leave only Trinity isoform ID)
+$ sed &#39;s/&gt;taxon_x_//&#39; endtrim_taxon_n.txt &gt; clean_taxon_n.text</code></pre>
 
 
 
