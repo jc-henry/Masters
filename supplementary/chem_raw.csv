@@ -1,0 +1,59 @@
+R J Hill Laboratories Ltd,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+--------------------------------------,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+File Format:,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Laboratory Job Number:,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Report Version:,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Interim:,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Cancelled:,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Amendment:,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Amendment Notes:,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Date Registered:,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+File Creation Date:,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Primary Contact Name:,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Primary Contact Address:,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Submitter Name:,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Submitter Address:,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Client Name:,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Client Address:,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Charging Name:,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Charging Address:,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Quote Number:,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Client Order Number:,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Client Reference:,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Additional Client Reference:,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Analyst Comments:,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+--------------------------------------,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Note: The results contained within this file are not to be considered as final.,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+"      Official confirmation of results will be in the form of a final signed report, either in printed or electronic format.",,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+--------------------------------------,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,Test Name:,pH,Olsen Phosphorus,Potassium,Calcium,Magnesium,Sodium,Organic Matter,Total Carbon,Total Nitrogen,'Total' Phosphorus,Potassium,Calcium,Magnesium,Sodium,Potassium,Calcium,Magnesium,Sodium,CEC,Total Base Saturation,Volume Weight,me/100g,Base Saturation %,MAF Units,Additional Properties
+,,,,Test Code:,pH,OP_mg/L,KMAF,CaMAF,MgMAF,NaMAF,OM_%,tC_%,tN_%,tP_mg/kg,K_me/100g,Ca_me/100g,Mg_me/100g,Na_me/100g,KSat,CaSat,MgSat,NaSat,CEC,tBS,VW_g/mL,meUnits,BSatUnits,MAFUnits,AddProps
+,,,,Sample Fraction:,SDG,SDG,SDG,SDG,SDG,SDG,SDG,SDG,SDG,SARDigOES,SDG,SDG,SDG,SDG,SDG,SDG,SDG,SDG,SDG,SDG,SDG,SDG,SDG,SDG,SDG
+,,,,Test Unit:,pH Units,mg/L,MAF units,MAF units,MAF units,MAF units,%,%,%,mg/kg,me/100g,me/100g,me/100g,me/100g,%BS,%BS,%BS,%BS,me/100g,%,g/mL,,,,
+Sample Number,Sample Name,Sample Type,Requested Activities,,,,,,,,,,,,,,,,,,,,,,,,,,
+1,Crithmifolius 1_0-5,"SOIL General, Outdoor","WetChem, SWetFee, OM, BS, tNNir, tP",,6,11,7,9,45,2,1.2,0.7,0.08,795,0.28,5.7,1.63,< 0.05,2.4,49,14.1,0.4,12,66,1.22,"K 0.28	Ca 5.7	Mg 1.63	Na < 0.05","K 2.4	Ca 49	Mg 14.1	Na 0.4","K 7	Ca 9	Mg 45	Na 2","Cation Exchange Capacity (me/100g)	12 Total Base Saturation (%)		66 Volume Weight (g/mL)			1.22"
+2,Crithmifolius 1_5-10,"SOIL General, Outdoor","WetChem, SWetFee, OM, BS, tNNir, tP",,6,11,5,9,43,3,1.3,0.7,0.07,716,0.21,6.2,1.63,0.05,1.7,50,13.2,0.4,12,65,1.16,"K 0.21	Ca 6.2	Mg 1.63	Na 0.05","K 1.7	Ca 50	Mg 13.2	Na 0.4","K 5	Ca 9	Mg 43	Na 3","Cation Exchange Capacity (me/100g)	12 Total Base Saturation (%)		65 Volume Weight (g/mL)			1.16"
+3,Crithmifolius 2_0-5,"SOIL General, Outdoor","WetChem, SWetFee, OM, BS, tNNir, tP",,6.1,14,8,13,67,3,0.5,0.3,0.05,728,0.3,7.3,2.16,< 0.05,2.2,55,16.2,0.4,13,74,1.39,"K 0.30	Ca 7.3	Mg 2.16	Na < 0.05","K 2.2	Ca 55	Mg 16.2	Na 0.4","K 8	Ca 13	Mg 67	Na 3","Cation Exchange Capacity (me/100g)	13 Total Base Saturation (%)		74 Volume Weight (g/mL)			1.39"
+4,Crithmifolius 2_5-10,"SOIL General, Outdoor","WetChem, SWetFee, OM, BS, tNNir, tP",,6.2,14,9,16,79,4,0.4,0.2,< 0.04,707,0.33,9.5,2.59,0.07,2,59,16.1,0.4,16,78,1.36,"K 0.33	Ca 9.5	Mg 2.59	Na 0.07","K 2.0	Ca 59	Mg 16.1	Na 0.4","K 9	Ca 16	Mg 79	Na 4","Cation Exchange Capacity (me/100g)	16 Total Base Saturation (%)		78 Volume Weight (g/mL)			1.36"
+5,Crithmifolius 3_0-5,"SOIL General, Outdoor","WetChem, SWetFee, OM, BS, tNNir, tP",,6.1,12,9,12,65,3,0.6,0.4,0.05,687,0.3,7,2.07,< 0.05,2.3,53,15.9,0.3,13,72,1.4,"K 0.30	Ca 7.0	Mg 2.07	Na < 0.05","K 2.3	Ca 53	Mg 15.9	Na 0.3","K 9	Ca 12	Mg 65	Na 3","Cation Exchange Capacity (me/100g)	13 Total Base Saturation (%)		72 Volume Weight (g/mL)			1.40"
+6,Crithmifolius 3_5-10,"SOIL General, Outdoor","WetChem, SWetFee, OM, BS, tNNir, tP",,6.2,14,9,19,91,4,0.5,0.3,0.05,652,0.3,10.7,2.91,0.06,1.8,63,17,0.4,17,82,1.39,"K 0.30	Ca 10.7	Mg 2.91	Na 0.06","K 1.8	Ca 63	Mg 17.0	Na 0.4","K 9	Ca 19	Mg 91	Na 4","Cation Exchange Capacity (me/100g)	17 Total Base Saturation (%)		82 Volume Weight (g/mL)			1.39"
+7,Crithmifolius 4_0-5,"SOIL General, Outdoor","WetChem, SWetFee, OM, BS, tNNir, tP",,6,13,8,8,46,2,1.2,0.7,0.07,711,0.31,5.5,1.71,< 0.05,2.6,46,14.3,0.3,12,63,1.2,"K 0.31	Ca 5.5	Mg 1.71	Na < 0.05","K 2.6	Ca 46	Mg 14.3	Na 0.3","K 8	Ca 8	Mg 46	Na 2","Cation Exchange Capacity (me/100g)	12 Total Base Saturation (%)		63 Volume Weight (g/mL)			1.20"
+8,Crithmifolius 4_5-10,"SOIL General, Outdoor","WetChem, SWetFee, OM, BS, tNNir, tP",,6,12,7,9,48,2,1,0.6,0.06,700,0.26,5.5,1.69,< 0.05,2.2,47,14.7,0.4,12,65,1.27,"K 0.26	Ca 5.5	Mg 1.69	Na < 0.05","K 2.2	Ca 47	Mg 14.7	Na 0.4","K 7	Ca 9	Mg 48	Na 2","Cation Exchange Capacity (me/100g)	12 Total Base Saturation (%)		65 Volume Weight (g/mL)			1.27"
+9,Hutt DL_1_3_0-5,"SOIL General, Outdoor","WetChem, SWetFee, OM, BS, tNNir, tP",,5.8,7,14,8,80,4,3,1.8,0.14,767,0.56,5.5,2.99,0.07,3.8,38,20.6,0.5,15,63,1.19,"K 0.56	Ca 5.5	Mg 2.99	Na 0.07","K 3.8	Ca 38	Mg 20.6	Na 0.5","K 14	Ca 8	Mg 80	Na 4","Cation Exchange Capacity (me/100g)	15 Total Base Saturation (%)		63 Volume Weight (g/mL)			1.19"
+10,Hutt DL_1_3_5-10,"SOIL General, Outdoor","WetChem, SWetFee, OM, BS, tNNir, tP",,5.6,6,9,7,69,4,3.1,1.8,0.14,736,0.37,4.8,2.65,0.07,2.6,34,18.9,0.5,14,56,1.16,"K 0.37	Ca 4.8	Mg 2.65	Na 0.07","K 2.6	Ca 34	Mg 18.9	Na 0.5","K 9	Ca 7	Mg 69	Na 4","Cation Exchange Capacity (me/100g)	14 Total Base Saturation (%)		56 Volume Weight (g/mL)			1.16"
+11,Hutt DL_2_0-5,"SOIL General, Outdoor","WetChem, SWetFee, OM, BS, tNNir, tP",,6.1,7,16,9,76,3,1.9,1.1,0.1,851,0.67,5.7,2.81,0.05,4.9,42,20.7,0.4,14,68,1.2,"K 0.67	Ca 5.7	Mg 2.81	Na 0.05","K 4.9	Ca 42	Mg 20.7	Na 0.4","K 16	Ca 9	Mg 76	Na 3","Cation Exchange Capacity (me/100g)	14 Total Base Saturation (%)		68 Volume Weight (g/mL)			1.20"
+12,Hutt DL_2_5-10,"SOIL General, Outdoor","WetChem, SWetFee, OM, BS, tNNir, tP",,5.8,6,11,8,70,3,2.2,1.3,0.11,803,0.44,5.1,2.57,0.05,3.3,38,19.2,0.4,13,61,1.2,"K 0.44	Ca 5.1	Mg 2.57	Na 0.05","K 3.3	Ca 38	Mg 19.2	Na 0.4","K 11	Ca 8	Mg 70	Na 3","Cation Exchange Capacity (me/100g)	13 Total Base Saturation (%)		61 Volume Weight (g/mL)			1.20"
+13,Hutt DL_4_0-5,"SOIL General, Outdoor","WetChem, SWetFee, OM, BS, tNNir, tP",,6.1,7,17,9,62,3,3.7,2.2,0.16,763,0.67,6.1,2.27,0.05,4.9,45,16.6,0.4,14,67,1.22,"K 0.67	Ca 6.1	Mg 2.27	Na 0.05","K 4.9	Ca 45	Mg 16.6	Na 0.4","K 17	Ca 9	Mg 62	Na 3","Cation Exchange Capacity (me/100g)	14 Total Base Saturation (%)		67 Volume Weight (g/mL)			1.22"
+14,Hutt DL_4_5-10,"SOIL General, Outdoor","WetChem, SWetFee, OM, BS, tNNir, tP",,5.7,6,9,7,51,2,2.9,1.7,0.13,760,0.41,5.4,2.05,< 0.05,3.1,41,15.6,0.4,13,60,1.11,"K 0.41	Ca 5.4	Mg 2.05	Na < 0.05","K 3.1	Ca 41	Mg 15.6	Na 0.4","K 9	Ca 7	Mg 51	Na 2","Cation Exchange Capacity (me/100g)	13 Total Base Saturation (%)		60 Volume Weight (g/mL)			1.11"
+15,Hutt DL_5_0-5,"SOIL General, Outdoor","WetChem, SWetFee, OM, BS, tNNir, tP",,5.9,5,13,8,65,3,2.9,1.7,0.13,686,0.55,5,2.42,< 0.05,4.2,39,18.6,0.4,13,62,1.19,"K 0.55	Ca 5.0	Mg 2.42	Na < 0.05","K 4.2	Ca 39	Mg 18.6	Na 0.4","K 13	Ca 8	Mg 65	Na 3","Cation Exchange Capacity (me/100g)	13 Total Base Saturation (%)		62 Volume Weight (g/mL)			1.19"
+16,Hutt DL_5_5-10,"SOIL General, Outdoor","WetChem, SWetFee, OM, BS, tNNir, tP",,5.6,5,9,6,58,2,2.2,1.3,0.11,662,0.37,4.4,2.19,< 0.05,2.8,34,17,0.4,13,55,1.17,"K 0.37	Ca 4.4	Mg 2.19	Na < 0.05","K 2.8	Ca 34	Mg 17.0	Na 0.4","K 9	Ca 6	Mg 58	Na 2","Cation Exchange Capacity (me/100g)	13 Total Base Saturation (%)		55 Volume Weight (g/mL)			1.17"
+17,Porters_1_0-5,"SOIL General, Outdoor","WetChem, SWetFee, OM, BS, tNNir, tP",,6,5,23,8,42,5,10.9,6.3,0.25,367,1.38,7.5,2.3,0.13,6.9,38,11.5,0.6,20,57,0.8,"K 1.38	Ca 7.5	Mg 2.30	Na 0.13","K 6.9	Ca 38	Mg 11.5	Na 0.6","K 23	Ca 8	Mg 42	Na 5","Cation Exchange Capacity (me/100g)	20 Total Base Saturation (%)		57 Volume Weight (g/mL)			0.80"
+18,Porters_1_5-10,"SOIL General, Outdoor","WetChem, SWetFee, OM, BS, tNNir, tP",,5.6,3,10,2,13,4,4.8,2.8,0.13,246,0.55,1.6,0.66,0.1,4.5,13,5.4,0.8,12,24,0.9,"K 0.55	Ca 1.6	Mg 0.66	Na 0.10","K 4.5	Ca 13	Mg 5.4	Na 0.8","K 10	Ca 2	Mg 13	Na 4","Cation Exchange Capacity (me/100g)	12 Total Base Saturation (%)		24 Volume Weight (g/mL)			0.90"
+19,Porters_2_0-5,"SOIL General, Outdoor","WetChem, SWetFee, OM, BS, tNNir, tP",,5.3,4,12,5,23,4,18.3,10.6,0.33,437,0.91,5.9,1.63,0.13,3.3,21,5.9,0.5,28,31,0.63,"K 0.91	Ca 5.9	Mg 1.63	Na 0.13","K 3.3	Ca 21	Mg 5.9	Na 0.5","K 12	Ca 5	Mg 23	Na 4","Cation Exchange Capacity (me/100g)	28 Total Base Saturation (%)		31 Volume Weight (g/mL)			0.63"
+20,Porters_2_5-10,"SOIL General, Outdoor","WetChem, SWetFee, OM, BS, tNNir, tP",,5.2,3,6,2,10,4,11.3,6.5,0.25,461,0.42,1.8,0.62,0.11,2.1,9,3,0.5,20,15,0.73,"K 0.42	Ca 1.8	Mg 0.62	Na 0.11","K 2.1	Ca 9	Mg 3.0	Na 0.5","K 6	Ca 2	Mg 10	Na 4","Cation Exchange Capacity (me/100g)	20 Total Base Saturation (%)		15 Volume Weight (g/mL)			0.73"
+21,Porters_3_0-5,"SOIL General, Outdoor","WetChem, SWetFee, OM, BS, tNNir, tP",,5.5,9,18,12,64,4,39.3,22.8,0.73,599,1.62,18.2,5.27,0.16,3.4,38,11.1,0.3,48,53,0.54,"K 1.62	Ca 18.2	Mg 5.27	Na 0.16","K 3.4	Ca 38	Mg 11.1	Na 0.3","K 18	Ca 12	Mg 64	Na 4","Cation Exchange Capacity (me/100g)	48 Total Base Saturation (%)		53 Volume Weight (g/mL)			0.54"
+22,Porters_3_5-10,"SOIL General, Outdoor","WetChem, SWetFee, OM, BS, tNNir, tP",,4.9,7,12,4,29,4,21,12.2,0.41,516,0.81,4.2,1.76,0.11,2.5,13,5.5,0.3,32,21,0.72,"K 0.81	Ca 4.2	Mg 1.76	Na 0.11","K 2.5	Ca 13	Mg 5.5	Na 0.3","K 12	Ca 4	Mg 29	Na 4","Cation Exchange Capacity (me/100g)	32 Total Base Saturation (%)		21 Volume Weight (g/mL)			0.72"
+23,Porters_4_0-5,"SOIL General, Outdoor","WetChem, SWetFee, OM, BS, tNNir, tP",,5.2,5,14,5,32,4,21.5,12.5,0.43,484,1.05,5.7,2.19,0.14,3.5,19,7.3,0.5,30,30,0.65,"K 1.05	Ca 5.7	Mg 2.19	Na 0.14","K 3.5	Ca 19	Mg 7.3	Na 0.5","K 14	Ca 5	Mg 32	Na 4","Cation Exchange Capacity (me/100g)	30 Total Base Saturation (%)		30 Volume Weight (g/mL)			0.65"
+24,Porters_4_5-10,"SOIL General, Outdoor","WetChem, SWetFee, OM, BS, tNNir, tP",,5.1,4,7,2,13,3,12.2,7.1,0.28,392,0.41,1.7,0.73,0.09,2.2,9,3.9,0.5,19,16,0.81,"K 0.41	Ca 1.7	Mg 0.73	Na 0.09","K 2.2	Ca 9	Mg 3.9	Na 0.5","K 7	Ca 2	Mg 13	Na 3","Cation Exchange Capacity (me/100g)	19 Total Base Saturation (%)		16 Volume Weight (g/mL)			0.81"
+25,Tennyson_1_2_3_0-5,"SOIL General, Outdoor","WetChem, SWetFee, OM, BS, tNNir, tP",,5.6,18,17,8,41,< 2,23.5,13.7,0.74,845,1.45,11.8,3.2,0.06,4.4,35,9.7,0.2,33,50,0.57,"K 1.45	Ca 11.8	Mg 3.20	Na 0.06","K 4.4	Ca 35	Mg 9.7	Na 0.2","K 17	Ca 8	Mg 41	Na < 2","Cation Exchange Capacity (me/100g)	33 Total Base Saturation (%)		50 Volume Weight (g/mL)			0.57"
+26,Tennyson_1_2_3_5-10,"SOIL General, Outdoor","WetChem, SWetFee, OM, BS, tNNir, tP",,5.4,19,15,6,30,2,15.4,8.9,0.58,739,1.01,6,1.76,0.06,3.7,22,6.5,0.2,27,32,0.75,"K 1.01	Ca 6.0	Mg 1.76	Na 0.06","K 3.7	Ca 22	Mg 6.5	Na 0.2","K 15	Ca 6	Mg 30	Na 2","Cation Exchange Capacity (me/100g)	27 Total Base Saturation (%)		32 Volume Weight (g/mL)			0.75"
