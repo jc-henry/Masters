@@ -41,6 +41,12 @@ for(i in 1:length(nwk_files)) {
 
 write.table(all_good_trees_list, 'all_accepted_trees.txt', quote = FALSE, row.names = FALSE, col.names = FALSE, sep = '\t')
 
+# Filter Newick files for taxa groupings
+# Using pattern matching to determine the position of the 6th comma in the Newick string. 
+# If the comma isn't positioned between closing and opening brackets nor to the right of five closing brackets ")",
+# or the left of five opening brackets "(", then the tree doesn't have a central edge segregating the 12 samples into two group of six. 
+# After filtering for tree topology, occurrences of each taxa at one side of the tree are counted. 
+# If there are more than two taxa, then the tree is rejected for displaying unclear taxonomic relationships. 
 
 pats = c('_1|_2|_3|\\(|\\)') # patterns to remove with str_remove_all() later
 inbrac <- ')' # set the close bracket for comparison later
