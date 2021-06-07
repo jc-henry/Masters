@@ -19,18 +19,18 @@ Append assembly identifier to TransDecoder peptide (.pep) and nucleotide (.cds f
 $ module load bioawk/1.0
 
 $ # .pep
-$ time bioawk -c fastx '{ print ">assembly_ID_" $name "\n" $seq }' assembly_ID_trinity_rep_contigs.fasta.transdecoder.pep > assembly_ID_id.faa
+$ time bioawk -c fastx '{ print ">assembly_ID_" $name "\n" $seq }' high_expression_contigs_taxon.fasta.transdecoder.pep > assembly_ID_id.faa
 $ # .cds
-$ time bioawk -c fastx '{ print ">assembly_ID_" $name "\n" $seq }' longest_isoform_trinity_assembly_ID.fasta.transdecoder.cds > assembly_ID_id.fna
+$ time bioawk -c fastx '{ print ">assembly_ID_" $name "\n" $seq }' high_expression_contigs_taxon.fasta.transdecoder.cds > assembly_ID_id.fna
 ```
 
-
-
+Count unique R. crithmifolius and R. monroi-Mt Hutt BLASTp hits against Arabidopsis protein sequences 
 ```{console}
-$ 
-$ 
+$ # Isoforms
+$ cut -f 2 blastp_taxon_x_arabidopsis.outfmt6 | sort | uniq | wc -l
 
-$ 
+$ # Genes (remove last 2 characters from the AT isoform ID)
+$ cut -f 2 blastp_taxon_x_arabidopsis.outfmt6 | sed -r 's/.{2}$//' | sort | uniq | wc -l
 ```
 
 
