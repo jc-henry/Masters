@@ -5,8 +5,8 @@
 #SBATCH --time          24:00:00                    								# hh:mm:ss time allocated
 #SBATCH --mem           21G                           								# memory allocated
 #SBATCH --cpus-per-task 8                           								# threads allocated
-#SBATCH --output        ./rcorrector.%j.output
-#SBATCH --error         ./rcorrector.%j.err
+#SBATCH --output        ./path/to/reads/rcorrected/rcorrector.%j.output
+#SBATCH --error         ./path/to/reads/rcorrected/rcorrector.%j.err
 #SBATCH --mail-type     END
 #SBATCH --mail-user     j.henry2@massey.ac.nz
 #SBATCH --chdir         /nesi/nobackup/project-code/taxon/
