@@ -352,7 +352,7 @@ pre code {
 </div>
 
 
-<p>Concatenate TransDecoder .cds files and run</p>
+<p>Merge TransDecoder .cds files before running extract_cds.sh script</p>
 <pre class="console"><code>$ cat all_transdecoder.cds &gt; all_taxa_nuc</code></pre>
 <p>Parse each OrthoFinder SCO cluster and output a list of TransDecoder IDs with cluster (file) name appended (separated by “.”)</p>
 <pre class="console"><code>$ for file in *.fa; \
@@ -384,10 +384,10 @@ $ # remove any clusters with no nucleotide variation
 $ # adjust &#39;n&#39; to 4 for aggregated assemblies and 12 for individual assemblies
 $ time for i in ./*fa; do secondlin=$(sed -n &#39;2 p&#39; ${i}); num=$(grep ${secondlin} ${i} | wc -l); if [ ${num} -eq &#39;n&#39; ]; then rm ${i}; fi; done</code></pre>
 <p>Trim fasta headers to assembly names only Run within a “trimmed” directory</p>
-<pre class="console"><code>$ # for the aggregated assemblises, cut at first underscore
+<pre class="console"><code>$ # for the aggregated assemblies, cut at first underscore
 $ or i in ../nogaps/*fa; do name=$(basename $i); sed &#39;s/_.*//&#39; ${i} &gt; ./${name}; done 
 
-$ # for the individual assemblises, cut at second underscore to retain number ID
+$ # for the individual assemblies, cut at second underscore to retain number ID
 $ for i in ../nogaps/*fa; do name=$(basename $i); sed &#39;s/_[^_]*//2g&#39; ${i} &gt; ./${name}; done</code></pre>
 <p>Produce ML phylogenetic trees</p>
 <pre class="console"><code>$ # make ML trees using the HKY model with random start tree
