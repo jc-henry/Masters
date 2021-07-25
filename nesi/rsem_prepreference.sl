@@ -5,11 +5,11 @@
 #SBATCH --time          00:45:00                    								# hh:mm:ss time allocated
 #SBATCH --mem           3G                           							    # memory allocated
 #SBATCH --cpus-per-task 1                           								# appears single threaded
-#SBATCH --output        /nesi/nobackup/project-code/path/to/rsem/taxon_rsem_prepreference.%j.output
-#SBATCH --error         /nesi/nobackup/project-code/path/to/rsem/taxon_rsem_prepreference.%j.err
+#SBATCH --output        ./taxon_rsem_prepreference.%j.output
+#SBATCH --error         ./taxon_rsem_prepreference.%j.err
 #SBATCH --mail-type     END
 #SBATCH --mail-user     j.henry2@massey.ac.nz
-#SBATCH --chdir         /nesi/nobackup/project-code/path/to/rsem/
+#SBATCH --chdir         /nesi/nobackup/project-code/taxon/path/to/rsem/
 
 module purge
 module load Trinity/2.11.0-gimkl-2020a

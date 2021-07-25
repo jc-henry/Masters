@@ -6,11 +6,11 @@
 #SBATCH --mem           40G                           							    # memory allocated
 #SBATCH --cpus-per-task 16                           								# threads allocated
 #SBATCH --array			1-3                                                         # run as an array
-#SBATCH --output        /nesi/nobackup/project-code/path/to/rsem/taxon_rsem_abundance_%A_%a.output
-#SBATCH --error         /nesi/nobackup/project-code/path/to/rsem/taxon_rsem_abundance_%A_%a.err
+#SBATCH --output        ./taxon_rsem_abundance_%A_%a.output
+#SBATCH --error         ./taxon_rsem_abundance_%A_%a.err
 #SBATCH --mail-type     END
 #SBATCH --mail-user     j.henry2@massey.ac.nz
-#SBATCH --chdir         /nesi/nobackup/project-code/path/to/rsem/
+#SBATCH --chdir         /nesi/nobackup/project-code/taxon/path/to/rsem/
 
 module purge
 module load Trinity/2.11.0-gimkl-2020a
