@@ -59,10 +59,10 @@ $ time for i in ./*fa; do secondlin=$(sed -n '2 p' ${i}); num=$(grep ${secondlin
 Trim fasta headers to assembly names only
 Run within a "trimmed" directory
 ```{console}
-$ # for the aggregated assemblises, cut at first underscore
+$ # for the aggregated assemblies, cut at first underscore
 $ or i in ../nogaps/*fa; do name=$(basename $i); sed 's/_.*//' ${i} > ./${name}; done 
 
-$ # for the individual assemblises, cut at second underscore to retain number ID
+$ # for the individual assemblies, cut at second underscore to retain number ID
 $ for i in ../nogaps/*fa; do name=$(basename $i); sed 's/_[^_]*//2g' ${i} > ./${name}; done
 ```
 
