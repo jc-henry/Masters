@@ -13,7 +13,7 @@ bk_df <- left_join(bk, map, by='V1') %>%
 write.table(bk_df, file = 'background_genes_araport.txt', col.names = FALSE, row.names = FALSE, quote = FALSE,  sep = '\t')
 
 # get the Trinity gene ID for the hutt-crith cluster 
-hutcri_id <- read.table('../geneIDonly_cluster_hutt_crithmifolius_vs_porters_lobulatus_padj0.5_nofc.txt', header = FALSE, sep = '\t')
+hutcri_id <- read.table('../geneIDonly_cluster_hutt_crithmifolius_vs_porters_lobulatus.txt', header = FALSE, sep = '\t')
 
 # Join together and drop rows with NA in V2 (no blast match originally)
 hutcri_df <- left_join(hutcri_id, map, by='V1') %>%
@@ -22,7 +22,7 @@ hutcri_df <- left_join(hutcri_id, map, by='V1') %>%
 write.table(hutcri_df, file = 'cluster_hutt_crithmifolius_arabidopsis_annotated_geneID.txt', col.names = FALSE, row.names = FALSE, quote = FALSE,  sep = '\t')
 
 # get the Trinity gene ID for the hutt-lob cluster 
-hutlob_id <- read.table('../geneIDonly_cluster_hutt_lobulatus_vs_porters_crithmifolius_padj0.5_nofc.txt', header = FALSE, sep = '\t')
+hutlob_id <- read.table('../geneIDonly_cluster_hutt_lobulatus_vs_porters_crithmifolius', header = FALSE, sep = '\t')
 
 # Join together and drop rows with NA in V2 (no blast match originally)
 hutlob_df <- left_join(hutlob_id, map, by='V1') %>%
@@ -31,7 +31,7 @@ hutlob_df <- left_join(hutlob_id, map, by='V1') %>%
 write.table(hutlob_df, file = 'cluster_hutt_lobulatus_arabidopsis_annotated_geneID.txt', col.names = FALSE, row.names = FALSE, quote = FALSE,  sep = '\t')
 
 # get the Trinity gene ID for the hutt-porters cluster 
-hutpor_id <- read.table('../geneIDonly_cluster_porters_hutt_vs_lobulatus_crithmifolius_padj0.5_nofc.txt', header = FALSE, sep = '\t')
+hutpor_id <- read.table('../geneIDonly_cluster_porters_hutt_vs_lobulatus_crithmifolius.txt', header = FALSE, sep = '\t')
 
 # Join together and drop rows with NA in V2 (no blast match originally)
 hutpor_df <- left_join(hutpor_id, map, by='V1') %>%
