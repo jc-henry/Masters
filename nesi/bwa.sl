@@ -5,8 +5,8 @@
 #SBATCH --time          03:00:00                    								# hh:mm:ss time allocated
 #SBATCH --mem           7G                           							    # memory allocated
 #SBATCH --cpus-per-task 10                           								# threads allocated
-#SBATCH --output        /nesi/nobackup/project-code/taxon/path/to/taxon_x_trinity/bwa/taxon_x_bwa.%j.output
-#SBATCH --error         /nesi/nobackup/project-code/taxon/path/to/taxon_x_trinity/bwa/taxon_x_bwa.%j.err
+#SBATCH --output        ./taxon_x_bwa.%j.output
+#SBATCH --error         ./taxon_x_bwa.%j.err
 #SBATCH --mail-type     END
 #SBATCH --mail-user     j.henry2@massey.ac.nz
 #SBATCH --chdir         /nesi/nobackup/project-code/taxon/path/to/taxon_x_trinity/bwa/
