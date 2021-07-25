@@ -69,8 +69,8 @@ res05Sig <- subset(res05, padj < 0.05)
 # export the results as tsv. And export just the gene IDs
 res05Sig_df <- as.data.frame(res05Sig)
 res05Sig_ids <- rownames_to_column(res05Sig_df, var = 'gene_id')
-write.table(res05Sig_ids, file="cluster_cluster_taxonA_taxonB_vs_taxonC_taxonD_padj0.5_nofc.txt", sep = '\t', row.names = FALSE, col.names = TRUE, quote = FALSE)
-write.table(res05Sig_ids$gene_id, file="geneIDonly_cluster_taxonA_taxonB_vs_taxonC_taxonD_padj0.5_nofc.txt", sep = '\t', row.names = FALSE, col.names = FALSE, quote = FALSE)
+write.table(res05Sig_ids, file="cluster_taxonA_taxonB_vs_taxonC_taxonD.txt", sep = '\t', row.names = FALSE, col.names = TRUE, quote = FALSE)
+write.table(res05Sig_ids$gene_id, file="geneIDonly_cluster_taxonA_taxonB_vs_taxonC_taxonD.txt", sep = '\t', row.names = FALSE, col.names = FALSE, quote = FALSE)
 
 
 
