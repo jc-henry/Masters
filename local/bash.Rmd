@@ -7,7 +7,7 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-Concatenate TransDecoder .cds files before running extract_cds.sh script
+Merge TransDecoder .cds files before running extract_cds.sh script
 ```{console}
 $ cat all_transdecoder.cds > all_taxa_nuc
 ```
