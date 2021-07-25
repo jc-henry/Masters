@@ -6,11 +6,11 @@
 #SBATCH --mem           50MB                            	# memory allocated
 #SBATCH --cpus-per-task 1                            		# single threaded
 #SBATCH --array		1-3                                     # run as an array
-#SBATCH --output        filter_rcorrected_%A_%a.out
-#SBATCH --error         filter_rcorrected_%A_%a.err
+#SBATCH --output        ./filter_rcorrected_%A_%a.out
+#SBATCH --error         ./filter_rcorrected_%A_%a.err
 #SBATCH --mail-type     END
 #SBATCH --mail-user     j.henry2@massey.ac.nz
-#SBATCH --chdir         /nesi/nobackup/massey02848/project-code/path/to/reads/rcorrected/
+#SBATCH --chdir         /nesi/nobackup/project-code/path/to/reads/rcorrected/
 
 module purge
 module load Python/2.7.18-gimkl-2020a
