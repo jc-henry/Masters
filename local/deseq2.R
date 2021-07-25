@@ -8,7 +8,7 @@ library(ggplot2)
 library(DESeq2)
 
 # set the path to the dir holding RSEM gene count directories for each sample
-dir  <- "path/to/allranunculus_rsem_mapping_lobulatus"  
+dir  <- "path/to/allranunculus_rsem_mapping_taxon"  
 
 # read in the text file describing the sample relationships and comparisons (e.g. both R. monroi grouped together)
 # this file is adjusted for each grouping comparison
