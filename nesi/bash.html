@@ -360,37 +360,15 @@ $ seqtk subseq Trinity_taxon_x.fasta taxon_x_bestsupported_contigs_list.txt &gt;
 <pre class="console"><code>$ module load bioawk/1.0
 
 $ # .pep
-$ time bioawk -c fastx &#39;{ print &quot;&gt;assembly_ID_&quot; $name &quot;\n&quot; $seq }&#39; assembly_ID_trinity_rep_contigs.fasta.transdecoder.pep &gt; assembly_ID_id.faa
+$ time bioawk -c fastx &#39;{ print &quot;&gt;assembly_ID_&quot; $name &quot;\n&quot; $seq }&#39; high_expression_contigs_taxon.fasta.transdecoder.pep &gt; assembly_ID_id.faa
 $ # .cds
-$ time bioawk -c fastx &#39;{ print &quot;&gt;assembly_ID_&quot; $name &quot;\n&quot; $seq }&#39; longest_isoform_trinity_assembly_ID.fasta.transdecoder.cds &gt; assembly_ID_id.fna</code></pre>
-<pre class="console"><code>$ 
-$ 
+$ time bioawk -c fastx &#39;{ print &quot;&gt;assembly_ID_&quot; $name &quot;\n&quot; $seq }&#39; high_expression_contigs_taxon.fasta.transdecoder.cds &gt; assembly_ID_id.fna</code></pre>
+<p>Count unique R. crithmifolius and R. monroi-Mt Hutt BLASTp hits against Arabidopsis protein sequences</p>
+<pre class="console"><code>$ # Isoforms
+$ cut -f 2 blastp_taxon_x_arabidopsis.outfmt6 | sort | uniq | wc -l
 
-$ </code></pre>
-<pre class="console"><code>$ 
-$ 
-
-$ </code></pre>
-<pre class="console"><code>$ 
-$ 
-
-$ </code></pre>
-<pre class="console"><code>$ 
-$ 
-
-$ </code></pre>
-<pre class="console"><code>$ 
-$ 
-
-$ </code></pre>
-<pre class="console"><code>$ 
-$ 
-
-$ </code></pre>
-<pre class="console"><code>$ 
-$ 
-
-$ </code></pre>
+$ # Genes (remove last 2 characters from the AT isoform ID)
+$ cut -f 2 blastp_taxon_x_arabidopsis.outfmt6 | sed -r &#39;s/.{2}$//&#39; | sort | uniq | wc -l</code></pre>
 
 
 
